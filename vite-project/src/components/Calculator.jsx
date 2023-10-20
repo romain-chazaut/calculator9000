@@ -23,12 +23,14 @@ function Calculator() {
 
     function handleEqualClick() {
         try {
-            setResult(eval(currentOperation));
+            const Evaluate = result ? result + currentOperation : currentOperation;
+            setResult(eval(Evaluate));
             setCurrentOperation('');
         } catch(e) {
             setResult('Error');
         }
     }
+
 
     function handleResetClick() {
         {
