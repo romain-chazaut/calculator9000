@@ -1,8 +1,8 @@
 h1 {
-  font-size: 2rem;   /* Réduire la taille de la police */
+  font-size: 2rem;  
   color: #FFD700;
   margin-top: -50px;  
-  margin-bottom: 20px;   /* Réduire la marge en bas */
+  margin-bottom: 20px;   
   text-shadow: 2px 2px 6px #333;
   text-align: center;
   font-weight: bold;
@@ -11,13 +11,13 @@ h1 {
 .calculator {
   width: 350px; 
   padding: 20px;
-  background-color: #1A1A1A; /* Noir foncé */
+  background-color: #1A1A1A; 
   border-radius: 15px; 
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .previous-calculation {
-  background-color: #333;  /* Gris foncé */
+  background-color: #333;  
   border: 1px solid #555;
   border-radius: 4px;
   text-align: right;
@@ -28,11 +28,11 @@ h1 {
   padding-right: 10px;
   margin-bottom: 8px; 
   font-size: 18px; 
-  color: #FFD700;  /* Or */
+  color: #FFD700;  
 }
 
 .BeautifulScreen {
-  background-color: #555;  /* Gris moyen */
+  background-color: #555;  
   border: 1px solid #777;
   border-radius: 4px;
   text-align: right; 
@@ -43,12 +43,12 @@ h1 {
   padding-right: 10px;
   margin-bottom: 12px;
   font-size: 24px;
-  color: #FFD700;  /* Or */
+  color: #FFD700;  
 }
 
 .screen {
   padding: 12px;
-  background-color: #5b5757; /* Noir foncé pour un meilleur contraste */
+  background-color: #5b5757; 
   border: 1px solid #7d7878;
   border-radius: 6px;
   margin-bottom: 15px;
@@ -58,7 +58,7 @@ h1 {
 }
 
 .current-operation, .result {
-  color: #FFFFFF; /* Texte blanc */
+  color: #FFFFFF; 
   margin: 4px 0;
 }
 
@@ -83,8 +83,8 @@ h1 {
 button {
   padding: 16px 22px; 
   font-size: 1.3rem;
-  background-color: #FFD700;  /* Or */
-  color: #333;  /* Gris foncé */
+  background-color: #FFD700; 
+  color: #333;  
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -92,12 +92,12 @@ button {
 }
 
 button:hover {
-  background-color: #E8C400;  /* Or légèrement assombri */
+  background-color: #E8C400; 
   transform: scale(1.05);
 }
 
 button.operator-button {
-  background-color: #777;  /* Gris */
+  background-color: #777; 
 }
 
 button.equal-button {
@@ -117,14 +117,14 @@ button.equal-button:hover {
 
 .over-nine-thousand {
   font-size: 2rem;
-  color: #FF0000; /* Couleur rouge pour l'impact */
+  color: #FF0000; 
   font-weight: bold;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Ombre pour plus de profondeur */
-  border: 3px solid #FF0000; /* Bordure rouge */
-  border-radius: 8px; /* Coins arrondis */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  border: 3px solid #FF0000; 
+  border-radius: 8px; 
   padding: 10px 20px; 
-  margin: 20px 0; /* Marge pour séparer des autres éléments */
-  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; /* Effet de secousse pour l'attention */
+  margin: 20px 0; 
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; 
 }
 
 @keyframes shake {
