@@ -1,38 +1,103 @@
 h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;   /* Réduire la taille de la police */
+  color: #FFD700;
+  margin-top: -50px;  
+  margin-bottom: 20px;   /* Réduire la marge en bas */
+  text-shadow: 2px 2px 6px #333;
+  text-align: center;
+  font-weight: bold;
 }
 
 .calculator {
-  width: 320px;
-  max-width: 100%;
+  width: 350px; 
   padding: 20px;
-  background-color: #D5E6ED; 
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #1A1A1A; /* Noir foncé */
+  border-radius: 15px; 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.previous-calculation {
+  background-color: #333;  /* Gris foncé */
+  border: 1px solid #555;
+  border-radius: 4px;
+  text-align: right;
+  height: 30px; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  margin-bottom: 8px; 
+  font-size: 18px; 
+  color: #FFD700;  /* Or */
 }
 
 .BeautifulScreen {
-  padding: 10px;
-  background-color: #fff; 
-  border: 1px solid #ccc; 
+  background-color: #555;  /* Gris moyen */
+  border: 1px solid #777;
   border-radius: 4px;
   text-align: right; 
-  height: 50px; 
+  height: 55px; 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding-right: 10px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #FFD700;  /* Or */
 }
+
+.screen {
+  padding: 12px;
+  background-color: #5b5757; /* Noir foncé pour un meilleur contraste */
+  border: 1px solid #7d7878;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.current-operation, .result {
+  color: #FFFFFF; /* Texte blanc */
+  margin: 4px 0;
+}
+
+.current-operation {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.result {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-top: 20px;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 16px 22px; 
+  font-size: 1.3rem;
+  background-color: #FFD700;  /* Or */
+  color: #333;  /* Gris foncé */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #E8C400;  /* Or légèrement assombri */
+  transform: scale(1.05);
+}
+
+button.operator-button {
+  background-color: #777;  /* Gris */
 }
 
 button.equal-button {
@@ -41,56 +106,41 @@ button.equal-button {
   margin-top: 20px;
 }
 
-button {
-  padding: 15px 20px; 
-  font-size: 1.2rem;
-  background-color: #855A5C;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  text-align: center;
-}
-
-button:hover {
-  background-color: #66101F;
-}
-
-button.operator-button {
-  background-color: #95ABB8;
-}
-
-button.equal-button {
-  background-color: #c90d0d;
-}
-
 button.operator-button:hover {
-  background-color: #284d6a;
+  background-color: #666;
 }
 
 button.equal-button:hover {
   background-color: #be2220;
 }
 
-.current-operation {
-  font-size: 25px;
-  font-weight: 600;
-  color: #6e3aa3;
-  text-align: right;
-}
-
-.result {
-  font-size: 25px;
-  font-weight: 600;
-  color: #333;
-  text-align: right;
-}
 
 .over-nine-thousand {
-  font-size: 25px;
-  font-weight: 800;
-  color: #333;
-  text-align: center;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #FF0000; /* Couleur rouge pour l'impact */
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Ombre pour plus de profondeur */
+  border: 3px solid #FF0000; /* Bordure rouge */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px 20px; 
+  margin: 20px 0; /* Marge pour séparer des autres éléments */
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; /* Effet de secousse pour l'attention */
+}
+
+@keyframes shake {
+  10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+      transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+      transform: translate3d(4px, 0, 0);
+  }
 }
